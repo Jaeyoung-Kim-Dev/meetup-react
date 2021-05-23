@@ -1,3 +1,5 @@
+import MeetupList from '../components/meetups/MeetupList';
+
 const DUMMY_DATA = [
   {
     id: 'm1',
@@ -20,7 +22,12 @@ const DUMMY_DATA = [
 ];
 
 function AllMeetupsPage() {
-  return <div>All Meetups Page</div>;
+  return (
+    <section>
+      <h1>All Meetups Page</h1>
+      <MeetupList meetups={DUMMY_DATA} />
+    </section>
+  );
 }
 
 export default AllMeetupsPage;
