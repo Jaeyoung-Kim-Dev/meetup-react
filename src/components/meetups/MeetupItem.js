@@ -13,11 +13,11 @@ function MeetupItem(props) {
       favoritesContext.removeFavorite(id);
     } else {
       favoritesContext.addFavorites({
-        id: id,
-        title: title,
-        description: description,
-        image: image,
-        address: address,
+        id,
+        title,
+        description,
+        image,
+        address,
       });
     }
   }
